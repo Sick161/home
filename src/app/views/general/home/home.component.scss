@@ -1,0 +1,374 @@
+.home {
+    background-image: url("../../../../assets/imgs/background.png");
+    // background-size: cover;
+    // background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    padding-top: 16px;
+}
+
+.nav-item {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 16px;
+    color: #ffffff;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilizando a nav da classe menu */
+.menu {
+    width: 100%;
+    height: 50px;
+    // background-color: #222;
+    // font-family: Arial;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*Estilizando as listas */
+.menu ul {
+    list-style: none;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.menu ul li {
+    width: 150px;
+    // float: left;
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    // background-color: #222;
+    color: #fff;
+
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    // background-color: #f4f4f4;
+    color: #bbb;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+/*Criando o label */
+label[for="bt_menu"] {
+    padding: 5px;
+    // background-color: #222;
+    color: #fff;
+    // font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+// .parallax {
+//     position: relative;
+//     width: 100%;
+//     height: 100vh;
+//     background-image: url('../../../../assets/imgs/depth3.png'),
+//         url('../../../../assets/imgs/depth2.png'),
+//         url('../../../../assets/imgs/depth1.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-position: 50% 50%;
+
+//     // url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png)
+// }
+
+/*Deixando o Menu Responsivo */
+@media (max-width: 800px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    #bt_menu:checked ~ .menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all 0.4s;
+    }
+
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .logo-container {
+        display: none;
+    }
+}
+
+// --------------------- album
+.album {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e2e3e6;
+
+    padding: 160px 0;
+}
+
+.album-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.album-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.album-image {
+    background-image: url("../../../../assets/imgs/capa-album.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 27.5vw;
+    height: 27.5vw;
+}
+
+.album-description {
+    max-width: 27.5vw;
+}
+
+@media (max-width: 800px) {
+    .album-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album-description {
+        max-width: 60vw;
+        margin-top: 16px;
+    }
+
+    .album-image {
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+// --------------------- caminhada
+.caminhada {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    padding: 160px 0;
+}
+
+.caminhada-title {
+    font-size: 3em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.caminhada-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+
+    margin-top: 40px;
+}
+
+.caminhada-description {
+    max-width: 30vw;
+    color: #ffffff;
+}
+
+.caminhada-images {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.caminhada-description:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.caminhada-description:nth-child(even) {
+    margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+    .caminhada-details {
+        flex-direction: column;
+    }
+
+    .caminhada-description {
+        max-width: 60vw;
+        margin-left: 0 !important;
+        margin: 16px 0;
+    }
+}
+
+// --------------------- agenda
+.agenda {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e2e3e6;
+    padding: 160px 0;
+}
+
+.agenda-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.agenda-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+ul.agenda-datas {
+    width: 60vw;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+
+    line-height: 4em;
+    font-size: 24px;
+}
+
+ul.agenda-datas li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+        " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+}
+
+ul.agenda-datas span:first-child {
+    padding-right: 0.33em;
+
+    background: #e2e3e6;
+}
+
+ul.agenda-datas span + span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    z-index: 1;
+
+    background: #e2e3e6;
+}
+
+.contato-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+// --------------------- developers
+.developers {
+    min-width: 100vw;
+    min-height: 3vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 80px 0;
+
+    color: #ffffff;
+    justify-content: space-between;
+}
