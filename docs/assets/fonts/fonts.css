@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "AveriaLibre";
+    src: url("./AveriaLibre-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AveriaLibre-Bold";
+    src: url("./AveriaLibre-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AveriaLibre-BoldItalic";
+    src: url("./AveriaLibre-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "AveriaLibre-Italic";
+    src: url("./AveriaLibre-Italic.ttf");
+}
+
+@font-face {
+    font-family: "AveriaLibre-Light";
+    src: url("./AveriaLibre-Light.ttf");
+}
+
+@font-face {
+    font-family: "AveriaLibre-LightItalic";
+    src: url("./AveriaLibre-LightItalic.ttf");
+}
