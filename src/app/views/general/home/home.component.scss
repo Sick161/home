@@ -360,6 +360,13 @@ ul.agenda-datas span + span {
     width: 60vw;
 }
 
+@media (max-width: 1024px) {
+    .contato-icons {
+        font-size: 0.6em;
+        margin: 0 3px;
+    }
+}
+
 // --------------------- developers
 .developers {
     min-width: 100vw;
