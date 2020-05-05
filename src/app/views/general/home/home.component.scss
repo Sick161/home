@@ -180,6 +180,27 @@ label[for="bt_menu"] {
     }
 }
 
+.soudncloud-player {
+    width: 60vw;
+    margin-top: 48px;
+}
+
+.youtube-player {
+    width: 60vw;
+    margin-top: 48px;
+    height: 51.5vh;
+}
+
+@media (max-width: 800px) {
+    .soudncloud-player {
+        width: 100vw;
+    }
+
+    .youtube-player {
+        width: 100vw;
+    }
+}
+
 // --------------------- album
 .album {
     min-width: 100vw;
