@@ -1,7 +1,5 @@
 .home {
     background-image: url("../../../../assets/imgs/background.png");
-    // background-size: cover;
-    // background-position: center;
     min-width: 100vw;
     min-height: 100vh;
 
@@ -328,7 +326,6 @@ label[for="bt_menu"] {
 
 .agenda-title {
     font-size: 3em;
-    margin-bottom: 40px;
     text-transform: uppercase;
 }
 
@@ -375,16 +372,42 @@ ul.agenda-datas span + span {
 }
 
 .contato-details {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     width: 60vw;
 }
 
+.contato-direct {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.contato-text {
+    font-size: xx-large;
+}
+
 @media (max-width: 1024px) {
+    .contato-details {
+        margin-top: 120px;
+    }
+
     .contato-icons {
         font-size: 0.6em;
         margin: 0 3px;
+    }
+
+    .contato-direct {
+        margin-top: 120px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-text {
+        font-size: large;
     }
 }
 
